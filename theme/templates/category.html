@@ -1,0 +1,37 @@
+{% extends "index.html" %}
+{% block content_title %}
+<h2>Articles in the {{ category }} category</h2>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+    {% for article in dates %}
+        <div class="small-12 medium-4 columns">
+            <h4><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
+            <p>{{ article.description }}<br />
+
+            {% if article.location %}
+                {% if article.externallink %}
+                    <a href="{{ article.externallink }}">{{ article.location }}</a>
+                {% else %}
+                    {{ article.location }}
+                {% endif %}
+                <br />
+            {% endif %}
+
+            <small>{{ article.locale_date }}</small></p>
+
+            {% if article.video %}
+                <a class="small button" href="{{ article.video }}">Video</a>
+            {% endif %}
+            {% if article.slides %}
+                <a class="small button" href="{{ article.slides }}">Slides</a>
+            {% endif %}
+            {% if article.rate %}
+                <a class="small button" href="{{ article.rate }}">Rate me</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
+
