@@ -6,8 +6,8 @@
 {% block content %}
     <div class="row">
     {% for article in dates %}
-        <div class="small-12 medium-4 columns">
-            <h4><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
+        <div class="small-12 medium-4 columns talk">
+            <h4>{{ article.title }}</h4>
             <p>{{ article.description }}<br />
 
             {% if article.location %}
