@@ -15,16 +15,26 @@
 <body>
     <div class="expanded row unstack-small">
         <div class="small-12 medium-4 large-3 columns sidebar">
-            <h3>Ivan Habunek</h3>
-            <div class="thumbnail profile-image">
-                <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/ivan.jpg">
+            <div class="show-for-small-only">
+                <div class="row">
+                    <div class="columns shrink">
+                        <h1>Ivan Habunek</h1>
+                    </div>
+                    <div class="columns">
+                        {% include "partials/contact-icons.html" %}
+                    </div>
+                </div>
             </div>
-            <p class="contact-icons">
-                <a href="mailto:ivan@habunek.com"><i class="fa fa-envelope-o fa-2x"></i></a>
-                <a href="https://github.com/ihabunek"><i class="fa fa-github fa-2x"></i></a>
-                <a href="https://twitter.com/ihabunek"><i class="fa fa-twitter fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/ihabunek"><i class="fa fa-linkedin fa-2x"></i></a>
-            </p>
+
+            <div class="hide-for-small-only">
+                <h3>Ivan Habunek</h3>
+
+                <div class="thumbnail profile-image">
+                    <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/ivan.jpg">
+                </div>
+
+                {% include "partials/contact-icons.html" %}
+            </div>
         </div>
 
         <div class="small-12 medium-8 large-9 columns content">

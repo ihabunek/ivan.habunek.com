@@ -62,3 +62,6 @@ hr.full-width {
     color: white;
     margin-right: .7rem;
 }
+.sidebar .show-for-small-only {
+    margin: .6rem 0 .6rem 1rem;
+}
