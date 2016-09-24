@@ -13,6 +13,10 @@ a:hover, a:focus {
     color: #2c3e50;
 }
 
+.label {
+    background-color: #c0392b;
+}
+
 .button {
     background-color: #c0392b;
     color: #fefefe;

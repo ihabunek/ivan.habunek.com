@@ -1,13 +1,15 @@
 {% extends "index.html" %}
-{% block content_title %}
-<h2>Articles in the {{ category }} category</h2>
-{% endblock %}
+
+{% block title %}Talks - Ivan Habunek{% endblock %}
 
 {% block content %}
     <div class="row">
     {% for article in dates %}
         <div class="small-12 medium-4 columns talk">
-            <h4>{{ article.title }}</h4>
+            <h4>{{ article.title }}
+            {% if article.language == 'hr' %}
+                <span class="tiny label" title="This talk was given in Croatian">HR</span>
+            {% endif %}</h4>
             <p>{{ article.description }}<br />
 
             {% if article.location %}
