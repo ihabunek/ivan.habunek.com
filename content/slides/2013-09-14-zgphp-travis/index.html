@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Travis CI - Ivan Habunek</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/reveal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/css/zenburn.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            if (window.location.search.match(/print-pdf/gi)) {
+                document.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/print/pdf.css">');
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown="01_intro.md" data-separator="^\n\r?\n\r?\n\r?" data-vertical="^\n\r?\n\r?"></section>
+                <section data-markdown="02_classic.md" data-separator="^\n\r?\n\r?\n\r?" data-vertical="^\n\r?\n\r?"></section>
+                <section data-markdown="03_ci_travis.md" data-separator="^\n\r?\n\r?\n\r?" data-vertical="^\n\r?\n\r?"></section>
+                <section data-markdown="04_setup.md" data-separator="^\n\r?\n\r?\n\r?" data-vertical="^\n\r?\n\r?"></section>
+                <section data-markdown="05_configuration.md" data-separator="^\n\r?\n\r?\n\r?" data-vertical="^\n\r?\n\r?"></section>
+                <section data-markdown="06_pull_requests.md" data-separator="^\n\r?\n\r?\n\r?" data-vertical="^\n\r?\n\r?"></section>
+                <section data-markdown="07_cli_api.md" data-separator="^\n\r?\n\r?\n\r?" data-vertical="^\n\r?\n\r?"></section>
+                <section data-markdown="08_misc.md" data-separator="^\n\r?\n\r?\n\r?" data-vertical="^\n\r?\n\r?"></section>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/head.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.js"></script>
+
+        <script>
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                keyboard: true,
+                center: false,
+                transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                dependencies: [
+                    // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+                    // Interpret Markdown in <section> elements
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                    // Syntax highlight for <code> elements
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                    // Zoom in and out with Alt+click
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+
+                    // Speaker notes
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+                    // Remote control your reveal.js presentation using a touch device
+                    // { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+                    // MathJax
+                    // { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/math/math.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>

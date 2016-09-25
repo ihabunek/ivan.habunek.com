@@ -1,0 +1,7 @@
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 { font-family: Calibri, Helvetica, sans-serif; }
+
+.reveal section img { background: none; border: 0; box-shadow: none }
+
+.reveal li { margin-top: 0.5em; }
+
+.reveal pre code { overflow-x: hidden }

@@ -52,3 +52,8 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 CATEGORY_URL = '{slug}/'
 CATEGORY_SAVE_AS = '{slug}/index.html'
+
+# Copy slides to output, but don't process them
+STATIC_PATHS = ['slides']
+PAGE_EXCLUDES = ['slides']
+ARTICLE_EXCLUDES = ['slides']
