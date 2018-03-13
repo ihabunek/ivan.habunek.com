@@ -17,15 +17,15 @@ SSH_PORT=22
 SSH_USER=ihabunek
 SSH_TARGET_DIR=/home/ihabunek/web/ivan.habunek.com
 
-S3_BUCKET=my_s3_bucket
+# S3_BUCKET=my_s3_bucket
 
-CLOUDFILES_USERNAME=my_rackspace_username
-CLOUDFILES_API_KEY=my_rackspace_api_key
-CLOUDFILES_CONTAINER=my_cloudfiles_container
+# CLOUDFILES_USERNAME=my_rackspace_username
+# CLOUDFILES_API_KEY=my_rackspace_api_key
+# CLOUDFILES_CONTAINER=my_cloudfiles_container
 
-DROPBOX_DIR=~/Dropbox/Public/
+# DROPBOX_DIR=~/Dropbox/Public/
 
-GITHUB_PAGES_BRANCH=gh-pages
+# GITHUB_PAGES_BRANCH=gh-pages
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -124,4 +124,12 @@ github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
-.PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+styles:
+	sassc --load-path=node_modules/foundation-sites/scss styles/site.scss theme/static/site.css
+
+styles-watch: styles
+	@while true; do \
+		inotifywait -qre close_write styles; make styles; \
+	done
+
+.PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github styles styles-watch

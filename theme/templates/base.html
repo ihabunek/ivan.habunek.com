@@ -5,47 +5,36 @@
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/firacode-1.204/fira_code.css">
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/font-awesome-4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/foundation-sites-6.2.3/foundation-flex.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/site.css">
     {% endblock head %}
 </head>
-
 <body>
-    <div class="expanded row unstack-small">
-        <div class="small-12 medium-4 large-3 columns sidebar">
-            <div class="show-for-small-only">
-                <div class="row">
-                    <div class="columns shrink">
-                        <h1>Ivan Habunek</h1>
-                    </div>
-                    <div class="columns">
-                        {% include "partials/contact-icons.html" %}
-                    </div>
-                </div>
+    <div class="top-bar">
+        <div class="grid-container">
+            <div class="title">
+                &gt; Ivan Habunek
             </div>
-
-            <div class="hide-for-small-only">
-                <h3>Ivan Habunek</h3>
-
-                <div class="thumbnail profile-image">
-                    <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/ivan.jpg">
-                </div>
-
-                {% include "partials/contact-icons.html" %}
+            <div class="button-group no-margin">
+            {% for title, link in MENUITEMS %}
+                <a href="{{ link }}" class="hollow button">{{ title }}</a>
+            {% endfor %}
             </div>
         </div>
+    </div>
 
-        <div class="small-12 medium-8 large-9 columns content">
-            <ul class="menu">
-                {% for title, link in MENUITEMS %}
-                    <li><a href="{{ link }}">{{ title }}</a></li>
-                {% endfor %}
-            </ul>
-
-            <hr class="full-width" />
-
+    <div class="grid-container">
+        <div class="content">
+            <div class="hide-for-large">
+                <h1>Ivan Habunek</h1>
+                <div class="button-group">
+                    {% for title, link in MENUITEMS %}
+                        <a href="{{ link }}" class="hollow button">{{ title }}</a>
+                    {% endfor %}
+                </div>
+                {% include "partials/contact-icons.html" %}
+            </div>
             {% block content %}
             {% endblock %}
         </div>

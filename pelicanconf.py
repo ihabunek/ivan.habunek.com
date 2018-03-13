@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Ivan Habunek'
 SITENAME = 'Ivan Habunek'
-SITEURL = 'https://ivan.habunek.com'
+SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
@@ -20,25 +20,26 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/'),
+#          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+# SOCIAL = (('You can add links in your config file', '#'),
+#           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
 THEME = 'theme'
 
 MENUITEMS = (
-    ('Home', '/'),
+    ('About', '/'),
     ('Talks', '/talks/'),
+    ('Projects', '/projects/'),
 )
 
 DISPLAY_PAGES_ON_MENU = True
@@ -54,6 +55,6 @@ CATEGORY_URL = '{slug}/'
 CATEGORY_SAVE_AS = '{slug}/index.html'
 
 # Copy slides to output, but don't process them
-STATIC_PATHS = ['slides']
+STATIC_PATHS = ['images', 'slides', 'keybase.txt']
 PAGE_EXCLUDES = ['slides']
 ARTICLE_EXCLUDES = ['slides']
