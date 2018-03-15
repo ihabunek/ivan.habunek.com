@@ -85,3 +85,15 @@ ul.contact-icons {
 .highlight {
     margin-bottom: 1rem;
 }
+
+// Pygments styles
+pre {
+    border: 1px dotted gray;
+    padding: 0 1rem 1rem 1rem;
+    background-color: WhiteSmoke;
+
+    .cp { display: none     } /* Comment.Preproc */
+    .nv { color: $dark-red  } /* Name.Variable */
+    .mi { color: DarkGreen  } /* Literal.Number.Integer */
+    .s1 { color: $dark-red  } /* Literal.String.Single */
+}

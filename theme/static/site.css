@@ -3076,3 +3076,20 @@ ul.contact-icons {
 
 .highlight {
   margin-bottom: 1rem; }
+
+pre {
+  border: 1px dotted gray;
+  padding: 0 1rem 1rem 1rem;
+  background-color: WhiteSmoke;
+  /* Comment.Preproc */
+  /* Name.Variable */
+  /* Literal.Number.Integer */
+  /* Literal.String.Single */ }
+  pre .cp {
+    display: none; }
+  pre .nv {
+    color: #c0392b; }
+  pre .mi {
+    color: DarkGreen; }
+  pre .s1 {
+    color: #c0392b; }

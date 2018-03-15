@@ -16,6 +16,16 @@ instances, including a curses-based UI.
 
 ---
 
+## hnbex-cli
+
+A commandline tool which displays exchange rates for Croatian Kuna (HRK).
+
+![hnbex-cli]({filename}/images/hnbex.png)
+
+<a href="https://github.com/ihabunek/hnbex-cli"><i class="fa fa-github"></i> github.com/ihabunek/hnbex-cli</a>
+
+---
+
 ## PDF417 barcode generator
 
 Generator for PDF417 2D barcodes in Python and PHP.
@@ -50,9 +60,11 @@ Write to your GitHub activity chart.
 
 ## Phormium
 
- A minimal ORM for PHP, written because none of the popular ones worked well in Informix.
+ A minimal ORM for PHP, written because none of the popular ones worked well
+ with Informix.
 
 ```php
+<?php
 $persons = Person::objects()
     ->filter('salary', '>', 10000)
     ->filter('birthday', 'between', ['2000-01-01', '2001-01-01'])
@@ -67,7 +79,8 @@ $persons = Person::objects()
 
 ## Radio scraper
 
-A web site for collecting radio playlists and showing some statistics, implemented in Python/Django.
+A web site for collecting radio playlists and showing some statistics,
+implemented in Python/Django.
 
 ![Radio scraper screenshot]({filename}/images/radioscraper.png)
 
