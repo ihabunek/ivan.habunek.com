@@ -10,7 +10,7 @@ publish on Github. Here are some of them.
 A commandline tool for interacting with [Mastodon](https://joinmastodon.org/)
 instances, including a curses-based UI.
 
-![Toot Example]({filename}/images/toot.png)
+![Toot Example]({static}/images/toot.png)
 
 <a href="https://github.com/ihabunek/toot"><i class="fa fa-github"></i> github.com/ihabunek/toot</a>
 
@@ -20,7 +20,7 @@ instances, including a curses-based UI.
 
 A commandline tool which displays exchange rates for Croatian Kuna (HRK).
 
-![hnbex-cli]({filename}/images/hnbex.png)
+![hnbex-cli]({static}/images/hnbex.png)
 
 <a href="https://github.com/ihabunek/hnbex-cli"><i class="fa fa-github"></i> github.com/ihabunek/hnbex-cli</a>
 
@@ -30,7 +30,7 @@ A commandline tool which displays exchange rates for Croatian Kuna (HRK).
 
 Generator for PDF417 2D barcodes in Python and PHP.
 
-![Barcode Example]({filename}/images/barcode.png)
+![Barcode Example]({static}/images/barcode.png)
 
 <a href="https://github.com/ihabunek/pdf417-py"><i class="fa fa-github"></i> github.com/ihabunek/pdf417-py</a><br />
 <a href="https://github.com/ihabunek/pdf417-php"><i class="fa fa-github"></i> github.com/ihabunek/pdf417-php</a>
@@ -41,7 +41,7 @@ Generator for PDF417 2D barcodes in Python and PHP.
 
 An API for generating 2D barcodes according to the HUB-3 standard, as defined by the Croatian National Bank.
 
-![Payment slip]({filename}/images/uplatnica.png)
+![Payment slip]({static}/images/uplatnica.png)
 
 <a href="https://hub3.bigfish.software/"><i class="fa fa-globe"></i> hub3.bigfish.software/</a><br />
 <a href="https://github.com/ihabunek/hub3-api"><i class="fa fa-github"></i> github.com/ihabunek/hub3-api</a>
@@ -52,7 +52,7 @@ An API for generating 2D barcodes according to the HUB-3 standard, as defined by
 
 Write to your GitHub activity chart.
 
-![Github Vanity Example]({filename}/images/vanity.jpg)
+![Github Vanity Example]({static}/images/vanity.jpg)
 
 <a href="https://github.com/ihabunek/github-vanity"><i class="fa fa-github"></i> github.com/ihabunek/github-vanity</a><br />
 
@@ -82,7 +82,7 @@ $persons = Person::objects()
 A web site for collecting radio playlists and showing some statistics,
 implemented in Python/Django.
 
-![Radio scraper screenshot]({filename}/images/radioscraper.png)
+![Radio scraper screenshot]({static}/images/radioscraper.png)
 
 <a href="https://radio.bezdomni.net/"><i class="fa fa-globe"></i> radio.bezdomni.net</a><br />
 <a href="https://github.com/ihabunek/radioscraper"><i class="fa fa-github"></i> github.com/ihabunek/radioscraper</a><br />
