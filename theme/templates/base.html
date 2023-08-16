@@ -10,29 +10,18 @@
 </head>
 <body>
     <div class="top-bar">
-        <div class="grid-container">
-            <div class="title">
-                &gt; Ivan Habunek
-            </div>
-            <div class="button-group no-margin">
-            {% for title, link in MENUITEMS %}
-                <a href="{{ link }}" class="hollow button">{{ title }}</a>
-            {% endfor %}
+        <div class="container">
+            <div class="title">&gt; Ivan Habunek</div>
+            <div class="links">
+                {% for title, link in MENUITEMS %}
+                    <a href="{{ link }}">{{ title }}</a>
+                {% endfor %}
             </div>
         </div>
     </div>
 
-    <div class="grid-container">
+    <div class="container">
         <div class="content">
-            <div class="hide-for-large">
-                <h1>Ivan Habunek</h1>
-                <div class="button-group">
-                    {% for title, link in MENUITEMS %}
-                        <a href="{{ link }}" class="hollow button">{{ title }}</a>
-                    {% endfor %}
-                </div>
-                {% include "partials/contact-icons.html" %}
-            </div>
             {% block content %}
             {% endblock %}
         </div>

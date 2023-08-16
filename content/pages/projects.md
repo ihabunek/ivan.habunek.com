@@ -1,39 +1,70 @@
 Title: Projects
 
-In my free time I love to write pet projects, some useful, some less so, which I
-publish on Github. Here are some of them.
+In my free time I love to write pet projects, some useful, some less so. Here
+are some of them.
 
 ---
 
-## Toot
+## toot
 
 A commandline tool for interacting with [Mastodon](https://joinmastodon.org/)
-instances, including a curses-based UI.
+instances, including a text-based UI.
 
-![Toot Example]({static}/images/toot.png)
+[toot.bezdomni.net](https://toot.bezdomni.net/)<br />
+[github.com/ihabunek/toot](https://github.com/ihabunek/toot)
 
-<a href="https://github.com/ihabunek/toot"><i class="fa fa-github"></i> github.com/ihabunek/toot</a>
+![Toot]({static}/images/toot.png)
+
+---
+
+## twitch-dl
+
+A commandline tool for downloading videos from [twitch.tv](https://www.twitch.tv/).
+
+[github.com/ihabunek/twitch-dl](https://github.com/ihabunek/twitch-dl)
+
+![twitch-dl]({static}/images/twitch-dl.png)
+
+---
+
+## Triglav
+
+Website for improving OpenStreetMaps, primarily in Croatia.
+
+[triglav.bezdomni.net](https://triglav.bezdomni.net)<br />
+[git.sr.ht/~ihabunek/triglav](https://git.sr.ht/~ihabunek/triglav)
+
+![Triglav]({static}/images/triglav.png)
 
 ---
 
 ## hnbex-cli
 
-A commandline tool which displays exchange rates for Croatian Kuna (HRK).
+A commandline tool for displaying the exchange rates for Croatian Kuna (HRK).
+
+[github.com/ihabunek/hnbex-cli](https://github.com/ihabunek/hnbex-cli)
 
 ![hnbex-cli]({static}/images/hnbex.png)
 
-<a href="https://github.com/ihabunek/hnbex-cli"><i class="fa fa-github"></i> github.com/ihabunek/hnbex-cli</a>
+---
+
+## meteo-hr
+
+A commandline tool for displaying the weather forecast from meteo.hr.
+
+[git.sr.ht/~ihabunek/meteo_hr](https://git.sr.ht/~ihabunek/meteo_hr)
+
+![meteo]({static}/images/meteo.png)
 
 ---
 
 ## PDF417 barcode generator
 
-Generator for PDF417 2D barcodes in Python and PHP.
+Generator for PDF417 2D barcodes in Python.
+
+[github.com/ihabunek/pdf417-py](https://github.com/ihabunek/pdf417-py)
 
 ![Barcode Example]({static}/images/barcode.png)
-
-<a href="https://github.com/ihabunek/pdf417-py"><i class="fa fa-github"></i> github.com/ihabunek/pdf417-py</a><br />
-<a href="https://github.com/ihabunek/pdf417-php"><i class="fa fa-github"></i> github.com/ihabunek/pdf417-php</a>
 
 ---
 
@@ -41,10 +72,10 @@ Generator for PDF417 2D barcodes in Python and PHP.
 
 An API for generating 2D barcodes according to the HUB-3 standard, as defined by the Croatian National Bank.
 
-![Payment slip]({static}/images/uplatnica.png)
+[hub3.bigfish.software](https://hub3.bigfish.software)<br />
+[git.sr.ht/~ihabunek/hub3-api](https://git.sr.ht/~ihabunek/hub3-api)
 
-<a href="https://hub3.bigfish.software/"><i class="fa fa-globe"></i> hub3.bigfish.software/</a><br />
-<a href="https://github.com/ihabunek/hub3-api"><i class="fa fa-github"></i> github.com/ihabunek/hub3-api</a>
+![Payment slip]({static}/images/uplatnica.png)
 
 ---
 
@@ -52,37 +83,17 @@ An API for generating 2D barcodes according to the HUB-3 standard, as defined by
 
 Write to your GitHub activity chart.
 
-![Github Vanity Example]({static}/images/vanity.jpg)
+[github.com/ihabunek/github-vanity](https://github.com/ihabunek/github-vanity)<br />
 
-<a href="https://github.com/ihabunek/github-vanity"><i class="fa fa-github"></i> github.com/ihabunek/github-vanity</a><br />
+![Github Vanity Example]({static}/images/vanity.jpg)
 
 ---
 
 ## Radio scraper
 
-A web site for collecting radio playlists and showing some statistics,
-implemented in Python/Django.
+A web site for collecting radio playlists and showing stats.
+
+[radio.bezdomni.net](https://radio.bezdomni.net/)<br />
+[github.com/ihabunek/radioscraper](https://github.com/ihabunek/radioscraper)
 
 ![Radio scraper screenshot]({static}/images/radioscraper.png)
-
-<a href="https://radio.bezdomni.net/"><i class="fa fa-globe"></i> radio.bezdomni.net</a><br />
-<a href="https://github.com/ihabunek/radioscraper"><i class="fa fa-github"></i> github.com/ihabunek/radioscraper</a><br />
-
----
-
-## Phormium
-
-A minimal ORM for PHP, written because none of the popular ones worked well
-with Informix. Discontinued.
-
-```php
-<?php
-$persons = Person::objects()
-    ->filter('salary', '>', 10000)
-    ->filter('birthday', 'between', ['2000-01-01', '2001-01-01'])
-    ->orderBy('name', 'desc')
-    ->limit(100)
-    ->fetch();
-```
-
-<a href="https://github.com/ihabunek/phormium/"><i class="fa fa-github"></i> github.com/ihabunek/phormium/</a><br />
