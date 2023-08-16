@@ -1,10 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
-
 AUTHOR = 'Ivan Habunek'
 SITENAME = 'Ivan Habunek'
-SITEURL = 'http://localhost:8000'
+SITEURL = ''
 
 PATH = 'content'
 
@@ -18,16 +14,6 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
-# Blogroll
-# LINKS = (('Pelican', 'http://getpelican.com/'),
-#          ('Python.org', 'http://python.org/'),
-#          ('Jinja2', 'http://jinja.pocoo.org/'),
-#          ('You can modify those links in your config file', '#'),)
-
-# Social widget
-# SOCIAL = (('You can add links in your config file', '#'),
-#           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
 
@@ -43,8 +29,6 @@ MENUITEMS = (
 )
 
 DISPLAY_PAGES_ON_MENU = True
-
-# USE_FOLDER_AS_CATEGORY = True
 
 # Clean URLs
 ARTICLE_URL = '{category}/{date:%Y-%m-%d}-{slug}/'
