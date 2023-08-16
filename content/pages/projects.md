@@ -58,10 +58,22 @@ Write to your GitHub activity chart.
 
 ---
 
+## Radio scraper
+
+A web site for collecting radio playlists and showing some statistics,
+implemented in Python/Django.
+
+![Radio scraper screenshot]({static}/images/radioscraper.png)
+
+<a href="https://radio.bezdomni.net/"><i class="fa fa-globe"></i> radio.bezdomni.net</a><br />
+<a href="https://github.com/ihabunek/radioscraper"><i class="fa fa-github"></i> github.com/ihabunek/radioscraper</a><br />
+
+---
+
 ## Phormium
 
- A minimal ORM for PHP, written because none of the popular ones worked well
- with Informix.
+A minimal ORM for PHP, written because none of the popular ones worked well
+with Informix. Discontinued.
 
 ```php
 <?php
@@ -74,15 +86,3 @@ $persons = Person::objects()
 ```
 
 <a href="https://github.com/ihabunek/phormium/"><i class="fa fa-github"></i> github.com/ihabunek/phormium/</a><br />
-
----
-
-## Radio scraper
-
-A web site for collecting radio playlists and showing some statistics,
-implemented in Python/Django.
-
-![Radio scraper screenshot]({static}/images/radioscraper.png)
-
-<a href="https://radio.bezdomni.net/"><i class="fa fa-globe"></i> radio.bezdomni.net</a><br />
-<a href="https://github.com/ihabunek/radioscraper"><i class="fa fa-github"></i> github.com/ihabunek/radioscraper</a><br />
