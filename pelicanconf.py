@@ -39,6 +39,6 @@ CATEGORY_URL = '{slug}/'
 CATEGORY_SAVE_AS = '{slug}/index.html'
 
 # Copy slides to output, but don't process them
-STATIC_PATHS = ['images', 'slides', 'keybase.txt']
+STATIC_PATHS = ['images', 'slides']
 PAGE_EXCLUDES = ['slides']
 ARTICLE_EXCLUDES = ['slides']
