@@ -4,27 +4,30 @@
     {% block head %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8" />
-
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/site.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/site.css?v=2">
     {% endblock head %}
 </head>
 <body>
     <div class="top-bar">
         <div class="container">
-            <div class="title">&gt; Ivan Habunek</div>
+            <h2>&gt; Ivan Habunek</h2>
             <div class="links">
                 {% for title, link in MENUITEMS %}
+                    {% if loop.index > 1 %}
+                        <span class="gray">·</span>
+                    {% endif %}
                     <a href="{{ link }}">{{ title }}</a>
                 {% endfor %}
             </div>
         </div>
     </div>
 
+    <hr />
+
     <div class="container">
-        <div class="content">
-            {% block content %}
-            {% endblock %}
-        </div>
+        {% block content %}
+        {% endblock %}
     </div>
 </body>
 </html>
